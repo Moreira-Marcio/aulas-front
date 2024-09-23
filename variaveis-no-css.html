@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* variaveis no css */
+        :root{
+            /* sintaxe
+            nome da vatiavel : valor; */
+            --cor:blue;
+            --fornt: georgia;
+            --sombratexto:red 1px 1px 5px;
+            --espacamentoInterno:4px;
+            --bordaDestaque:dashed 2px;
+            
+        }
+
+
+        h1{
+            color: var(--cor);
+            text-shadow: var(--sombratexto);
+            
+        }
+
+        h2{
+            border: solid 2px var(--cor);
+            font-family: var(--fornt);
+            padding: var(--espacamentoInterno);
+        }
+
+        p{
+
+            font-family:var(--fornt);
+            border: var(--bordaDestaque) blue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Usando variaveis no CSS</h1>
+    <hr>
+    <h2>Front-end</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem.</p>
+
+    <h2>back-end</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis.</p>
+    
+</body>
+</html>
