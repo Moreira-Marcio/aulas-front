@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+       *{box-sizing: border-box;}
+
+       body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+
+       /* flex trabalha cou eixos/axis
+       direção row/linha (padrao) ou 
+       direção column/coluna */
+
+
+       img {max-width: 100%;}
+
+       .container{
+        border: solid 1px;
+        padding: 4px 0;
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        flex-direction: row-reverse;
+       }
+
+       
+
+       article{
+        background-color: white;
+        width: 30%;
+        padding: 2px;
+
+        
+       }
+
+       h2{ 
+        font-size: 18px;
+
+       }
+
+       p{ font-size: 14px;}
+    </style>
+
+</head>
+
+<body>
+    <h1>Tabalahndo com flexbox</h1>
+    <hr>
+    <p>flexbox é um mecanismo que permite aplicar facilmente recursos de alinhamento, espaçamento e distrribuição de
+        elementos na pagina. Muito util na elaboração de layouts comuns, baseados em linhas e colunas.
+    </p>
+
+    <div class="container">
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ad?</p>
+        </article>
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ad?</p>
+        </article>
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microssoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ad?</p>
+        </article>
+    </div>
+</body>
+
+</html>
