@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados tabulados no html</title>
+
+
+</head>
+
+<body>
+
+    <h1>Exemplos de tabelas</h1>
+    <hr>
+    <table border="1">
+        <caption>Relação de clientes</caption>
+
+        <thead>
+            <tr>
+                <th>Pais</th>
+                <th>nome</th>
+                <th>cidade</th>
+                <th>contato</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!--rowspan é a mesclagem de celula vertical-->
+                <td rowspan="4">Brasil</td>
+                <td>chaves</td>
+                <td>Praia Grande</td>
+                <td>11-2135-3521</td>
+            </tr>
+            <tr>
+              
+                <td>chapolin</td>
+                <td>Ubatuba</td>
+                <td>11-2135-1000</td>
+            </tr>
+            <tr>
+                
+                <td>jaiminho</td>
+                <td>tangamandapio</td>
+                <td>11-2135-3333</td>
+            <tr>
+                
+                <td>Bruxa do 71</td>
+                <td>salem</td>
+                <td>11-2135-6666</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <!--colspan é a mesclagem de celula horizontal-->
+                <td colspan="4"> totaç de clientes: 4</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

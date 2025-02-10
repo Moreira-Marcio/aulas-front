@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<body>
+
+    <h1>Pcture</h1>
+
+    <p>A tag <code>pisture</code> permite que diferentes versoes de uma imagem sejam carregadas com base no tamanho da tela. </p>
+
+    <p>O uso desta tag faz parte de uma tecnica de design chamada de <b>Art Diretion.</b></p>
+
+    <figure>
+    <picture>
+
+        <!-- telas a partir de 800px? imagem grande -->
+        <source media="(min-width: 800px)" srcset="imagens/ideias.jpg">
+
+        <!-- telas a partir de 500px? imagem media -->
+        <source media="(min-width: 500px)" srcset="imagens/ideias-media.jpg">
+
+        <!-- telas menores do que o especificado? imagem padrao/pequena. isto tambem é chamado de "fallback" da imagen -->
+        <img src="imagens/ideias-pequena.jpg" alt="">
+    </picture>
+    <figcaption>Toró de ideias</figcaption>
+    </figure>
+</body>
+</html>
